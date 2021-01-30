@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "dynamicHUDapi",
+  "version": "${version}",
+  "name": "DynamicHUDapi",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/dynamicHUDapi/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cocona.dynamichudapi.client.DynamicHUDapiClient"
+    ]
+  },
+  "mixins": [
+    "dynamicHUDapi.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
